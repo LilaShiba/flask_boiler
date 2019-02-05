@@ -107,8 +107,20 @@ flask run
 - Add three new pages with routes
 
 # Day Two
-- Create form
-- Display information
+Create forms and use models
+
+## Forms
+Form to get user's nickname and what they ate for breakfast
+
+```html
+<form method="post" action="/answer_display ">
+  <label for="nickname">What's your nickname?</label>
+  <input type='text' name='nickname'>
+  <label for="breakfast">What did you have for breakfast?</label>
+  <input type='text' name='breakfast'>
+  <input type='submit'>
+</form>
+```
 
 # Day Three
 - API call
