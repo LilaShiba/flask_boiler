@@ -2,15 +2,24 @@
 
 ### File Structure
 
--app
-    -models
-    -static
-    -templates
-        index.html
-    routes.py
-    __init__.py
-.flaskenv
-main.py
+```
+project
+│   .flaskenv
+│   main.py    
+│
+└───app
+│   │  │ routes.py
+│   │  │ __init__.py
+│   │
+│   └───templates
+│   |      │ index.html
+│   |
+│   │
+│   └───models
+│   │
+│   └───static
+
+```
 
 ### Flask
 
