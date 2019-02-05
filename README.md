@@ -110,10 +110,12 @@ flask run
 Create forms and use models
 
 ## Forms
+Create a new template called form.html and ansDisplay.html
+
 Form to get user's nickname and what they ate for breakfast
 
 ```html
-<form method="post" action="/answer_display ">
+<form method="post" action="/ansDisplay ">
   <label for="nickname">What's your nickname?</label>
   <input type='text' name='nickname'>
   <label for="breakfast">What did you have for breakfast?</label>
