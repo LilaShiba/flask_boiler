@@ -1,5 +1,17 @@
 # Initialization
 
+### File Structure
+
+-app
+    -models
+    -static
+    -templates
+        index.html
+    routes.py
+    __init__.py
+.flaskenv
+main.py
+
 ### Flask
 
 ```bash
@@ -8,6 +20,7 @@ pip3 install flask
 pip install python-dotenv
 
 ```
+if you get a permission error, use sudo
 
 ### Create folder
 
@@ -23,6 +36,29 @@ cd Desktop ; mkdir 01_flask ; cd 01_flask
 
 ### templates
 Add a index.html with a short hello message
+
+### routes
+```python
+from flask import *
+from app import app
+
+@app.route('/')
+@app.route('/index')
+def index():
+    return render_template('index.html')
+```
+### __init__.py
+
+```python
+from flask import *
+#from flask_bootstrap import Bootstrap
+
+app = Flask(__name__)
+#bootstrap = Bootstrap(app)
+
+
+from app import routes
+```
 
 ### .flaskenv
 add the following lines
@@ -45,15 +81,10 @@ export LC_ALL=C.UTF-8
 export LANG=C.UTF-8
 ```
 
-### routes
-```python
-from flask import *
-from app import app
 
-@app.route('/')
-@app.route('/index')
-def index():
-    return render_template('index.html')
+### main.py
+```python
+from app import app
 ```
 
 ### Run Server
