@@ -124,8 +124,29 @@ Form to get user's nickname and what they ate for breakfast
 </form>
 ```
 
+In routes
+
+```python
+@app.route('/shoData', methods=['GET','POST'])
+def shoData():
+    userdata = dict(request.form)
+    print(userdata)
+    return render_template('shoData.html', name=userdata['name'][0], age=userdata['age'][0])
+ 
+```
+In templates
+
+```html
+<h1> {{name}} </h1>
+<h2> {{age}} </h2>
+
+```
+
 # Day Three
-- API call
+- create new pages for api_request and api_info
+- create a form for the api_request
+- update routes to show info take from the form and display it on api_info
+
 
 # Day Four
 - Bootstrap & CSS
