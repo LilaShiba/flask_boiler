@@ -143,6 +143,8 @@ In templates
 ```
 
 # Day Three
+Check out this [api doc](https://developers.giphy.com/docs/)
+
 - create new pages for api_request and api_info
 - create a form for the api_request
 - update routes to show info take from the form and display it on api_info
