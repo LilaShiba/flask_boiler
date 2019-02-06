@@ -1,0 +1,20 @@
+
+<html>
+    <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+      <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Codystar" rel="stylesheet">
+      <title> Shibas Are Cool </title>
+      <meta charset="UTF-9">
+    </head>
+    <body style='background: grey;'>
+      <div class='container'>
+        <div class='jumbotron' style='background:black'>
+          <h1 style='color:white'>Flask API Demo</h1>
+          <!-- <center><img src='/static/images/jerry.gif' style='padding-top:15px; height: 50%; width: 50%; object-fit: contain'><center> -->
+        </div>
+      </div>
+      {% block content %}{% endblock %}
+    </body>
+</html>
