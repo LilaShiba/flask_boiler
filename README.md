@@ -115,11 +115,11 @@ Create a new template called form.html and ansDisplay.html
 Form to get user's nickname and what they ate for breakfast
 
 ```html
-<form method="post" action="/ansDisplay ">
-  <label for="nickname">What's your nickname?</label>
-  <input type='text' name='nickname'>
-  <label for="breakfast">What did you have for breakfast?</label>
-  <input type='text' name='breakfast'>
+<form method="post" action="/change for your path ">
+  <label for="change for your var name">What's your nickname?</label>
+  <input type='text' name='change for your var name'>
+  <label for="change for your var name">What did you have for breakfast?</label>
+  <input type='text' name='change for your var name'>
   <input type='submit'>
 </form>
 ```
